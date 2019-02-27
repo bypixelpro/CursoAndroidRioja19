@@ -1,0 +1,20 @@
+    
+    public String obtenerFrases() {
+        // El btn se ha pulsado, asi que actualizamos el textview con la frase
+        // Seleccionamos una frase al azar
+        Random randomGenerator = new Random();
+        int randomNumber = randomGenerator.nextInt(frases.length);
+        return frases[randomNumber];
+    }
+    
+    
+    
+    public int obtenerColores() {
+        // El btn se ha pulsado, asi que actualizamos el textview con la frase
+        // Seleccionamos una frase al azar
+        Random randomGenerator = new Random();
+        int randomNumber = randomGenerator.nextInt(colores.length);
+        int color = Color.parseColor(colores[randomNumber]);
+
+        return color;
+    }
